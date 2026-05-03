@@ -1,0 +1,651 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Ahmed's zaki Portfolio" />
+    <title>Ahmed Zaki | Software Engineer</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!-- <link rel="stylesheet" href="Css/normalize.css" /> -->
+    <link rel="stylesheet" href="all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Ahmed Zaki</div>
+      <div style="display: flex; align-items: center">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Technical Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#journy">journy</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button
+          id="theme-toggle"
+          class="theme-toggle"
+          aria-label="Toggle theme"
+        >
+          <img
+            src="./assets/moon.svg"
+            alt="Toggle theme"
+            class="icon"
+            id="theme-icon"
+          />
+        </button>
+      </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo">Ahmed Zaki</div>
+      <div class="hamburger-menu">
+        <div
+          class="hamburger-icon"
+          onclick="toggleMenu()"
+          aria-label="Toggle menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li>
+            <a href="#experience" onclick="toggleMenu()">Technical Skills</a>
+          </li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#journy" onclick="toggleMenu()">journy</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </ul>
+      </div>
+      <button
+        id="theme-toggle-mobile"
+        class="theme-toggle"
+        aria-label="Toggle theme"
+      >
+        <img
+          src="./assets/moon.svg"
+          alt="Toggle theme"
+          class="icon"
+          id="theme-icon-mobile"
+        />
+      </button>
+    </nav>
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img
+          src="./assets/ahmedzaki.jpg"
+          alt="Ahmed Ismail's Profile Picture"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Wellcome</p>
+        <h1 class="title">Ahmed Zaki</h1>
+        <p class="section__text__p2">
+          Software Engineer || competitive programmer
+        </p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Ahmed-Zaki-CV.pdf')"
+          >
+            Resume / CV
+          </button>
+          <button
+            class="btn btn-color-1"
+            onclick="location.href = './#contact'"
+          >
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn Profile"
+            class="icon"
+            onclick="
+              location.href =
+                'https://www.linkedin.com/in/ahmed-zaki-907026342/'
+            "
+          />
+          <img
+            src="./assets/github.png"
+            alt="GitHub Profile"
+            class="icon"
+            onclick="location.href = 'https://github.com/ahmmedzakii'"
+          />
+          <img
+            src="./assets/codeforces.png"
+            alt="GitHub Profile"
+            class="icon-cf"
+            onclick="
+              location.href = 'https://codeforces.com/profile/ahmedzakizakijr'
+            "
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">so, who am I?</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/Ahmedmus.jpeg"
+            alt="Profile Picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience Icon"
+                class="icon"
+              />
+              <h3>Work Experience</h3>
+              <p>
+                <span class="s1"> Junior Mentor @NU ICPC Community</span>
+                <span class="s1">
+                  Joniour Assistant TA at Nile University (Fall 2026)</span
+                >
+                <span class="sw">SWE intern @NTI (Summer 2025)</span>
+              </p>
+            </div>
+            <div class="details-container">
+              <!-- <img
+                src="./assets/education.png"
+                alt="Education Icon"
+                class="icon"
+              /> -->
+              <i class="fa-solid fa-user-graduate iconED"></i>
+              <h3>Education</h3>
+              <p>
+                <span class="uni"
+                  ><a href="https://www.nu.edu.eg/" target="_blank"
+                    >Nile University</a
+                  ></span
+                ><br />Bachelor of Science in Computer Science (CS)<br />
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              - I'm Ahmed a Software Engineer with strong Problem Solving
+              skills, focused on building efficient, well structured software
+              solutions. Passionate about optimizations, advanced algorithms,
+              and competitive programming using C++.
+              <br /><br />
+              - <b>Achievements: </b> <br /><b>-</b> Ranked 32nd in 2025 and 7th
+              in 2026 2026 <b>NUCPA</b> Qualifications <br />
+              <b>-</b> Qualified to <b>ECBC</b> 2026 <br />
+              <b>- Accepted to Google Summer of Code 2026 (GSoC)</b>
+              <br /><br />
+              - If something here caught your eye, let's talk. I'd be a good fit
+              for your team, take my word for it :)
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow Icon"
+        class="icon arrow"
+        onclick="location.href = './#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">what do I know?</p>
+      <h1 class="title">Technical Skills</h1>
+      <div class="experience-details-container">
+        <div class="tech-stack-section">
+          <div class="tech-stack-container">
+            <div class="tech-icon">
+              <img src="https://skillicons.dev/icons?i=cpp" />
+            </div>
+            <div class="tech-icon">
+              <img src="https://skillicons.dev/icons?i=cs" />
+            </div>
+            <div class="tech-icon">
+              <img src="https://skillicons.dev/icons?i=c" />
+            </div>
+            <div class="tech-icon">
+              <img src="https://skillicons.dev/icons?i=python" />
+            </div>
+            <div class="tech-icon">
+              <img src="https://skillicons.dev/icons?i=js" />
+            </div>
+            <div class="tech-icon">
+              <img src="https://skillicons.dev/icons?i=ts" />
+            </div>
+            <div class="tech-icon">
+              <img src="https://skillicons.dev/icons?i=react" />
+            </div>
+            <div class="tech-icon">
+              <img src="https://skillicons.dev/icons?i=html" />
+            </div>
+            <div class="tech-icon">
+              <img src="https://skillicons.dev/icons?i=css" />
+            </div>
+            <div class="tech-icon">
+              <img src="https://skillicons.dev/icons?i=tailwindcss" />
+            </div>
+            <div class="tech-icon">
+              <img src="https://skillicons.dev/icons?i=git" />
+            </div>
+            <div class="tech-icon">
+              <img src="https://skillicons.dev/icons?i=github" />
+            </div>
+          </div>
+        </div>
+        <!-- <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Languages</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill" class="icon" />
+                <div><h3>Python</h3></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill" class="icon" />
+                <div><h3>Java</h3></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill" class="icon" />
+                <div><h3>C/C++</h3></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill" class="icon" />
+                <div><h3>Rust</h3></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill" class="icon" />
+                <div><h3>JavaScript</h3></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill" class="icon" />
+                <div><h3>TypeScript</h3></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill" class="icon" />
+                <div><h3>Go</h3></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill" class="icon" />
+                <div><h3>Bash</h3></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill" class="icon" />
+                <div><h3>SQL</h3></div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Libraries & Frameworks</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill" class="icon" />
+                <div><h3>React.js</h3></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill" class="icon" />
+                <div><h3>Node.js</h3></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill" class="icon" />
+                <div><h3>Express.js</h3></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill" class="icon" />
+                <div><h3>Flask</h3></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill" class="icon" />
+                <div><h3>Spring Boot</h3></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill" class="icon" />
+                <div><h3>PyTorch</h3></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill" class="icon" />
+                <div><h3>TensorFlow</h3></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill" class="icon" />
+                <div><h3>Keras</h3></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill" class="icon" />
+                <div><h3>OpenVINO</h3></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill" class="icon" />
+                <div><h3>Selenium</h3></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill" class="icon" />
+                <div><h3>k6</h3></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill" class="icon" />
+                <div><h3>PyTest</h3></div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Cloud / DevOps</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill" class="icon" />
+                <div><h3>AWS</h3></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill" class="icon" />
+                <div><h3>Docker</h3></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill" class="icon" />
+                <div><h3>Terraform</h3></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill" class="icon" />
+                <div><h3>GitHub Actions</h3></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill" class="icon" />
+                <div><h3>Linux</h3></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill" class="icon" />
+                <div><h3>SageMaker</h3></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill" class="icon" />
+                <div><h3>Grafana</h3></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill" class="icon" />
+                <div><h3>Git</h3></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill" class="icon" />
+                <div><h3>Postman</h3></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill" class="icon" />
+                <div><h3>Maven</h3></div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Databases</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill" class="icon" />
+                <div><h3>MySQL</h3></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill" class="icon" />
+                <div><h3>PostgreSQL</h3></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill" class="icon" />
+                <div><h3>MongoDB</h3></div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Skill" class="icon" />
+                <div><h3>Redis</h3></div>
+              </article>
+            </div>
+          </div>
+        </div> -->
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow Icon"
+        class="icon arrow"
+        onclick="location.href = './#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">check out my</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/shaghalny-shokran-project.png"
+                alt="ShaghalnyShokran Project"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              ShaghalnyShokran - AI Resume & ATS Checker
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href = 'https://shaghalnyshokran.com'"
+              >
+                Website
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-5.png"
+                alt="MediClarify Project"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              MediClarify - AI Medical Document Simplifier
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="
+                  location.href = 'https://github.com/ismailahmed1/MediClarify'
+                "
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="
+                  location.href = 'https://www.youtube.com/watch?v=b9zeLKd0p5I'
+                "
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-4.png"
+                alt="EcoLens Project"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              EcoLens - Sustainability Tracker
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="
+                  location.href = 'https://github.com/ismailahmed1/eco-lens'
+                "
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="
+                  location.href = 'https://www.youtube.com/watch?v=xkZDamh2WCg'
+                "
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Nobu Project"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Nobu - Money Tracker
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="
+                  location.href =
+                    'https://github.com/ismailahmed1/money-tracker-app'
+                "
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href = 'https://youtu.be/Intiopx86-o'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Sewy Project"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Sewy - Football Manager AI Journalist
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="
+                  location.href =
+                    'https://github.com/ismailahmed1/football-manager-bot'
+                "
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href = 'https://youtu.be/vZXK1BLXOJc'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Portfolio Project"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Personal Website / Portfolio
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="
+                  location.href =
+                    'https://github.com/ismailahmed1/ahmed-ismail-portfolio'
+                "
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href = 'https://ahmedismail.ca'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href = './#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">be sure to get in touch!</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:ahmedzakizakijr@gmail.com"
+              >ahmedzakizakijr@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/ahmed-zaki-907026342/"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Technical Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#journy">journy</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>
+        Copyright &copy; <span id="year"></span> Ahmed Zaki. All Rights
+        Reserved.
+      </p>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
